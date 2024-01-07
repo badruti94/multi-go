@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  
+  multi-go:
+    container_name: multi-go
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: multi-go:1.0.0
+    ports:
+      - "8080:8080"
+    
+    
